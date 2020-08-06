@@ -7626,6 +7626,9 @@ ul.party-tray {
 .tomo-menu-container {
   padding: 1em;
 }
+.homepage_Ad {
+  margin-top: 2em;
+}
 @media (min-width: 35em) {
   .tomo-menu-container {
     max-width: 60em;
