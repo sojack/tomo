@@ -134,10 +134,14 @@
                 </div>
 
                 <hr class="space s" />
+
+                <!-- ############     Form       ###########-->
+
                 <form
-                  action="http://tomosushi.ca/scripts/php/contact-form.php"
-                  class="form-box form-ajax"
+                  name="RH-contactForm"
                   method="post"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
                 >
                   <div class="row">
                     <div class="col-md-4">
@@ -146,7 +150,7 @@
                         id="name"
                         name="name"
                         placeholder="name"
-                        required=""
+                        required
                         type="text"
                       />
                     </div>
@@ -157,7 +161,7 @@
                         id="email"
                         name="email"
                         placeholder="email"
-                        required=""
+                        required
                         type="email"
                       />
                     </div>

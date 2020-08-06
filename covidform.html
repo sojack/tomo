@@ -26,7 +26,7 @@
   </head>
   <body>
     <form
-      name="webContact"
+      name="RH-covidForm"
       method="post"
       data-netlify="true"
       action="/contactSuccess"
@@ -40,6 +40,11 @@
           <label for="bot-field"></label>
           <input name="bot-field" required />
         </li>
+        <li style="visibility: hidden; display: none;">
+          <label for="bot-field"></label>
+          <input name="subject" type="text" value="Richmond Hill covid form" />
+        </li>
+
         <li>
           <label for="name"
             >Full name:<abbr title="required" aria-label="required"
