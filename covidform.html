@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      li {
+        list-style: none;
+        margin-bottom: 1em;
+      }
+      label {
+        display: block;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form
+      name="webContact"
+      method="post"
+      data-netlify="true"
+      action="/contactSuccess"
+      netlify-honeypot="bot-field"
+    >
+      <!--  hidden input for netlify  -->
+      <input type="hidden" name="form-name" value="webContact" required />
+
+      <ul>
+        <li style="visibility: hidden; display: none;">
+          <label for="bot-field"></label>
+          <input name="bot-field" required />
+        </li>
+        <li>
+          <label for="name"
+            >Full name:<abbr title="required" aria-label="required"
+              >*</abbr
+            ></label
+          >
+
+          <input type="text" name="name" required />
+        </li>
+        <li>
+          <label for="email"
+            >email:
+            <abbr title="required" aria-label="required">
+              *
+            </abbr></label
+          >
+
+          <input type="text" name="email" required />
+        </li>
+        <li>
+          <label for="phone">phone: </label>
+          <input type="text" name="phone" required />
+        </li>
+        <li>
+          <label for="address">Address: </label>
+          <input type="text" name="address" required />
+        </li>
+        <li>
+          <label for="postalcode">Postal Code: </label>
+          <input type="text" name="postalcode" required />
+        </li>
+        <li>
+          <label for="province">Province: </label>
+          <input type="text" name="province" required />
+        </li>
+        <li>
+          <button type="submit">Report Restaurant Visit</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
