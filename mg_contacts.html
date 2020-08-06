@@ -135,10 +135,19 @@
 
                 <hr class="space s" />
                 <form
-                  action="http://tomosushi.ca/scripts/php/contact-form.php"
-                  class="form-box form-ajax"
+                  name="MS-contactForm"
                   method="post"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
                 >
+                  <div style="visibility: hidden; display: none;">
+                    <input
+                      name="subject"
+                      type="text"
+                      value="Contact Form - Mississauga"
+                    />
+                  </div>
+
                   <div class="row">
                     <div class="col-md-4">
                       <input
@@ -191,7 +200,7 @@
                     </div>
                   </div>
 
-                  <div class="success-box">
+                  <!-- <div class="success-box">
                     <div class="alert alert-success">
                       Congratulations. Your message has been sent successfully
                     </div>
@@ -201,7 +210,7 @@
                     <div class="alert alert-warning">
                       Error, please retry. Your message has not been sent
                     </div>
-                  </div>
+                  </div> -->
                 </form>
               </div>
             </div>
