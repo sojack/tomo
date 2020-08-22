@@ -7456,6 +7456,22 @@ ul.party-tray {
   column-gap: 0.5em;
 }
 
+.menu > li.drink-01 {
+  grid-template-columns: 30% 30% repeat(6, 1fr);
+}
+.menu > li.drink-02 {
+  grid-template-columns: 60% repeat(2, 1fr);
+}
+.menu > li.drink-03 {
+  grid-template-columns: 30% 30% repeat(2, 1fr);
+}
+.menu > li.drink-04 {
+  grid-template-columns: 60% repeat(3, 1fr);
+}
+.menu > li.drink-05 {
+  grid-template-columns: 60% 1fr;
+}
+
 .item-title {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -7487,7 +7503,12 @@ ul.party-tray {
 .item-count-01,
 .item-count-02,
 .item-count-03,
-.description-narrow {
+.description-narrow,
+.drink-01,
+.drink-02,
+.drink-03,
+.drink-04,
+.drink-05 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: small;
   align-self: flex-start;
@@ -7641,5 +7662,8 @@ ul.party-tray {
     align-items: flex-start;
     max-width: 60em;
     margin: 0 auto;
+  }
+  ul.drinks {
+    grid-template-columns: 1fr;
   }
 }
