@@ -7650,6 +7650,9 @@ ul.party-tray {
 .homepage_Ad {
   margin-top: 2em;
 }
+.xsmall {
+  font-size: xx-small;
+}
 @media (min-width: 35em) {
   .tomo-menu-container {
     max-width: 60em;
