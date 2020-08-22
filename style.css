@@ -7457,7 +7457,7 @@ ul.party-tray {
 }
 
 .menu > li.drink-01 {
-  grid-template-columns: 30% 30% repeat(6, 1fr);
+  grid-template-columns: 20% 20% repeat(6, auto);
 }
 .menu > li.drink-02 {
   grid-template-columns: 60% repeat(2, 1fr);
