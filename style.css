@@ -7496,6 +7496,9 @@ ul.party-tray {
   position: relative;
   transition: max-width 900ms ease-in-out;
 }
+.party-tray .item-photo {
+  grid-row: 2/5;
+}
 .item-photo img:hover {
   z-index: 100;
   max-width: unset;
