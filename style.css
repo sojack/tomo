@@ -7673,6 +7673,11 @@ ul.party-tray {
 .xsmall {
   font-size: xx-small;
 }
+.homepage_notice{
+  display:block;
+  margin:1em auto;
+}
+
 @media (min-width: 35em) {
   .tomo-menu-container {
     max-width: 60em;
