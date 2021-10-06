@@ -5314,9 +5314,8 @@ SECTIONS
 }
 
 .section-bg-video {
-  overflow: hidden;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .section-custom {
@@ -7676,6 +7675,7 @@ ul.party-tray {
 .homepage_notice{
   display:block;
   margin:1em auto;
+  width:80%;
 }
 
 @media (min-width: 35em) {
